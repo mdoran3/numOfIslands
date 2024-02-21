@@ -13,5 +13,15 @@ public class NumOfIslands {
         return count;
     }
 
-
+    private void bfs(char[][] grid, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {
+            return;
+        } else {
+            grid[i][j] = '0';
+            bfs(grid, i + 1, j); //check up
+            bfs(grid, i -1, j); //check down
+            bfs(grid, i, j+1); //check right
+            bfs(grid, i, j-1);  //check left
+        }
+    }
 }
