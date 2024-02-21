@@ -22,3 +22,10 @@ Input:
 
 Output: 3
 ```
+
+To compile in Java:
+* `javac Main.java NumOfIslands.java `
+
+To run in Java:
+* 'java Main'
+

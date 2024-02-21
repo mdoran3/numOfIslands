@@ -1,7 +1,7 @@
 public class NumOfIslands {
 
     public int numIslands(char[][] grid) {
-        int count = 1;
+        int count = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == '1') {
@@ -20,8 +20,8 @@ public class NumOfIslands {
             grid[i][j] = '0';
             bfs(grid, i + 1, j); //check up
             bfs(grid, i -1, j); //check down
-            bfs(grid, i, j+1); //check right
-            bfs(grid, i, j-1);  //check left
+            bfs(grid, i, j-1); //check left
+            bfs(grid, i, j+1);  //check right
         }
     }
 }
