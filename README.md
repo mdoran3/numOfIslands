@@ -27,5 +27,5 @@ To compile in Java:
 * `javac Main.java NumOfIslands.java `
 
 To run in Java:
-* 'java Main'
+* `java Main`
 
